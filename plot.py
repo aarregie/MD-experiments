@@ -79,3 +79,28 @@ fig.tight_layout(h_pad=3, w_pad = 5)
 plt.savefig(os.path.join(output_folder, 'series_ops.png'))
 plt.show()
 
+
+#%%
+
+
+plt.plot(series, color = 'blue', lw = 2)
+plt.xlabel('Time', fontsize = 20)
+plt.ylabel('Simulated Signal', fontsize = 20)
+plt.tick_params(axis = 'both', labelsize = 15)
+plt.show()
+
+
+
+plt.plot(main_index, main, color = 'blue', lw = 2)
+plt.tick_params(axis = 'both', labelsize = 15)
+plt.ylabel('Simulated Signal', fontsize = 20)
+plt.xlabel('Time', fontsize = 20)
+plt.show()
+
+
+
+plt.plot(secondary_index, secondary, color = 'blue', lw = 2)
+plt.tick_params(axis = 'both', labelsize = 15)
+plt.ylabel('Simulated Signal', fontsize = 20)
+plt.xlabel('Time', fontsize =20)
+plt.show()
